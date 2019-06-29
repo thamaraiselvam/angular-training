@@ -10,6 +10,9 @@ import { BlogComponent } from './blog/blog.component';
 import { RequestService } from './request.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +21,14 @@ import { HeaderComponent } from './header/header.component';
     TourComponent,
     DocumentComponent,
     BlogComponent,
-    HeaderComponent
+    HeaderComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     RequestService
