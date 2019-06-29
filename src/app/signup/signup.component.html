@@ -10,6 +10,17 @@
   </div>
   <div>
     <input name="city" placeholder="city" [formControl]="city">
+    <span class="invalid" *ngIf="city.invalid">city should have min 4 char</span>
   </div>
-  <button (click)="register()"> Register </button>
+  <button class="{{email.invalid ? 'disabled' : ''}}" (click)="register()"> Register </button>
 </form>
+
+<h3>Raised Buttons</h3>
+<div class="example-button-row">
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
+  <a mat-raised-button routerLink=".">Link</a>
+</div>

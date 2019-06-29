@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, Validators, FormGroup } from '@angular/forms';
 import { RequestService } from '../request.service';
 
 @Component({
@@ -18,11 +18,12 @@ export class SignupComponent implements OnInit {
 
   createFormController(){
     this.name = new FormControl('', Validators.required);
-    this.email = new FormControl('', Validators.required);
-    this.city = new FormControl('', Validators.required);
+    this.email = new FormControl('', Validators.email);
+    this.city = new FormControl('', [Validators.minLength(4), Validators.maxLength(6)]);
   }
 
   register() {
+
     const newUserInfo = {
       name: this.name.value,
       email: this.email.value,
