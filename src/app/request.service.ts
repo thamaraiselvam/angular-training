@@ -12,4 +12,8 @@ export class RequestService {
   public getUser() {
     return this.http.get('https://reqres.in/api/users');
   }
+
+  public addNewUser(newUser){
+    return this.http.post('https://reqres.in/api/users', newUser);
+  }
 }

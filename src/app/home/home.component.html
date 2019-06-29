@@ -6,4 +6,7 @@
   <img width="300" alt="Angular Logo" src="./../assets/images/logo.jpeg">
 </div>
 
-<app-child></app-child>
+<form>
+    <input  placeholder="First name" [formControl]="name" >
+    <button (click)="register() " >Register</button>
+</form>

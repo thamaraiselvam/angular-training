@@ -1,0 +1,15 @@
+<br>
+<br>
+<form>
+  <div>
+    <input name="email" placeholder="email" [formControl]="email">
+    <span *ngIf="email.invalid"> email is invalid</span>
+  </div>
+  <div>
+    <input name="name" placeholder="name" [formControl]="name">
+  </div>
+  <div>
+    <input name="city" placeholder="city" [formControl]="city">
+  </div>
+  <button (click)="register()"> Register </button>
+</form>
