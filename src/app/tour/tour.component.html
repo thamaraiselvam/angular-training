@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <div *ngFor="let user of users?.data">
+
+      <div class="card">
+        <div class="photo"></div>
+        <div class="banner"></div>
+        <ul>
+          <li><b>{{user?.first_name}}</b></li>
+          <li>{{user?.email}}</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
