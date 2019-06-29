@@ -1,0 +1,68 @@
+Introduction:
+✔ What is Angular? @done(19-06-29 09:58)
+✔ Why is Angular? @done(19-06-29 09:58)
+
+Start:
+✔ How to Install? @done(19-06-29 09:58)
+✔ How to create App? @done(19-06-29 09:58)
+✔ How to run App? @done(19-06-29 09:58)
+✔ File Structure @done(19-06-29 09:58)
+
+Architecture:
+✔ Base @done(19-06-29 10:33)
+✔ Decorator @done(19-06-29 10:33)
+✔ Module @done(19-06-29 10:33)
+✔ Component @done(19-06-29 10:33)
+✔ Service/DI @done(19-06-29 10:33)
+✔ Router @done(19-06-29 10:33)
+✔ Life Cycles @done(19-06-29 10:33)
+
+File Structure:
+✔ Src @done(19-06-29 10:34)
+✔ package.json @done(19-06-29 10:34)
+✔ angular.json @done(19-06-29 10:34)
+✔ tsconfig.json @done(19-06-29 10:34)
+✔ tslint.json @done(19-06-29 10:34)
+✔ editorconfig @done(19-06-29 10:34)
+✔ @done(19-06-29 10:34)
+
+
+✔ Create Simple Component @done(19-06-29 11:15)
+✔ Create Simple Router @done(19-06-29 11:15)
+✔ Create Simple Service @done(19-06-29 14:04)
+
+
+Dive deep into Components:
+☐ Parent and Child
+☐ Child and Parent
+✔ data binding @done(19-06-29 14:23)
+✔ pipes @done(19-06-29 14:29)
+
+directive:
+    ✔ component @done(19-06-29 14:23)
+    ✔ Structure @done(19-06-29 14:23)
+    ✔ Attribute @done(19-06-29 14:23)
+
+Extending Boilerplate with Home page
+
+PlayGround
+Create Front end of Task management app:
+    ✔ Create header Component @done(19-06-29 15:42)
+    ✔ Create home Component @done(19-06-29 15:42)
+    ✔ Create request Service @done(19-06-29 15:42)
+    ✔ List all tasks list on home Component @done(19-06-29 15:42)
+    ✔ Add new task from home Component @done(19-06-29 15:42)
+
+Your tasks:
+    Create Front end for Contact manager:
+        ☐ No auth required
+        ☐ Create Home component
+        ☐ Create header component
+        ☐ Create footer component
+        ☐ make header and footer as fixed add it in app.component
+        ☐ create router
+        ☐ Add new Contact -> new component
+        ☐ create service -> handle all requests
+        ☐ List all contacts
+        ☐ Delete Contact
+        ☐ Update Contact

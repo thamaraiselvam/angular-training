@@ -1,0 +1,116 @@
+Introduction:
+
+    What is Angular? -> One Framework across devices
+    Why Angular ->
+        - Single page Application,
+        - Speed,
+        - performance,
+        - Scalability,
+        - RXJS ( Reactive Ext for JS -> bring ASYNC programming, Eg: Observables support to angular)
+        - What is Observables
+        - compare to Promises
+        - Example snippet:
+        apiData.subscribe(res => {
+             { console.log('data: ', x); },
+            error(err) { console.log('errors already caught... will not run'); }
+        });
+
+Install
+    Install Angular CLI -> `npm install -g @angular/cli`
+        this will install a global program called `ng` -> mean a"NG"ular
+
+Create App
+
+    `ng new my-app` 'my-app' is user-defined
+    ng will prompt you features, accept defaults and enter
+
+
+File Structure:
+    e2e => Test classes
+    src
+        app => dir has our all codes
+        asset => asset stuffs like img, css
+        environments => configurations
+        polyfills => browser compatibilty
+        style.css => affects entire app
+        karma => Test cases
+    package.json => project's meta
+    angular.json => Angular meta
+    tsconfig.json => ts configuration like compile info
+    tslint.json => linter config
+    editorconfig => Code standards protocals
+
+
+Run App:
+    `ng serve` => will compile TS into JS and run the app.
+    `ng serve --open` => Opens running app into browser
+
+
+Architecture:
+    Base
+        Written on Typescript
+        NgModules is the heart of Angular, it helps to angular to differentiate components, module and inject dependencies on run time..etc
+    Decorator
+        With decorators, we can configure and customize our classes.
+        anything starting with `@` is a decorator, there are dozen of decorators available. we can see them on the flow.
+    Module
+        Every module has @ngModule decorator and it has the following metadata
+            declarations - The set of components, directives, and pipes (declarable) that belong to this module.
+            exports - Makes the declared view public so they can be used by other modules.
+            imports - This is where you import other modules.
+            providers - DEFINES SERVICES that can be injected into this module’s views.
+            routers - define router here
+            bootstrap - The component used to launch the app, the AppComponent by default. All apps must have at least one. - Don't care now.
+    Component
+        it has own decorator @Component and it controls the `view`
+            selector: CSS goes here either inline or external file
+            templateURL: html template either inline or external file
+            providers: services that this component requires
+    Service and dependency injection
+        Service
+            Hold values, function features that app needs.
+            Anything common should be here for reusability
+            usage:
+                Making requests,
+                Logs
+                validating user inputs such as authentication..etc
+        DI
+            service will be injected into components when they need it so service is DI and it should have a @injectable decorator
+    Routing
+        All navigation paths are handled here
+
+    Lifecycle:
+        ngOnInit() - on init -> only once => do all network request here best practice
+        https://angular.io/guide/lifecycle-hooks - remaining check here
+
+
+Create Component
+
+`ng generate component tour`
+
+create routing
+
+add new routing in router file then add `routeLink`
+
+Create header
+
+https://demo.tutorialzine.com/2015/02/freebie-7-responsive-header-templates/header-login-signup.html
+
+use material if possible
+
+https://reqres.in/
+
+
+directives:
+
+    components
+    strucutural -> changes the template strcuture -> ngIf, ngFor..etc
+    attribute -> change attr of tag -> ngStyle, [src] ,
+
+binding syntax:
+
+    {{}}, [] -> 1 way component to view
+    () ->  one way view to component
+    [()] => two way
+
+https://material.angular.io/guide/getting-started
